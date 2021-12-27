@@ -1,0 +1,27 @@
+<div class="wrapper">
+    <div class="container">
+        <div class="users">
+            <h1>USERS</h1>
+            <table class="users-table">
+                <tr>
+                    <th>_id</th>
+                    <th>age</th>
+                    <th>address</th>
+                    <th>company</th>
+                    <th>mail</th>
+                    <th>name</th>
+                </tr>
+                <tbody>
+                    <tr *ngFor="let user of users" [routerLink]="['/users/', user._id]">
+                        <td class=" _id ">{{user._id}}</td>
+                        <td class="age ">{{user.age}}</td>
+                        <td class="address ">{{user.address}}</td>
+                        <td class="company ">{{user.company}}</td>
+                        <td class="email ">{{user.email}}</td>
+                        <td class="name ">{{user.name}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

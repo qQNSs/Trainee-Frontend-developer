@@ -1,0 +1,71 @@
+$background: rgba(185, 222, 250, 0.8);
+.wrapper {
+    min-height: 100%;
+    background: url(../../assets/image/1610492462_29-p-novogodnii-svetlii-fon-52.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.container {
+    min-width: 500px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+th {
+    text-align: end;
+    padding-right: 10px;
+}
+
+.users {
+    position: relative;
+    top: 300px;
+    height: 100%;
+    border-radius: 25px;
+    padding: 20px 50px 50px;
+    min-height: 100%;
+    background-color: $background;
+    background-size: cover;
+    opacity: 0.8;
+    box-shadow: 0 0 770px 200px $background;
+    & h1 {
+        text-align: center;
+    }
+}
+
+.users-container {
+    max-width: 700px;
+}
+
+.tree-img {
+    max-height: 300px;
+    position: absolute;
+    right: 25px;
+    top: 120px;
+}
+
+@media(max-width: 1100px) {
+    .tree-img {
+        position: absolute;
+        right: 50px;
+        top: 25px;
+        height: 250px;
+    }
+}
+
+@media(max-width: 920px) {
+    .tree-img {
+        position: absolute;
+        right: 10px;
+        top: 25px;
+        height: 220px;
+    }
+}
+
+@media(max-width: 640px) {
+    .tree-img {
+        position: absolute;
+        right: 10px;
+        top: 25px;
+        height: 180px;
+    }
+}
